@@ -123,13 +123,13 @@
 .hero-about{
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../Assets/images/hero-about.jpg') center/cover no-repeat;
+    url('../Assets/Images/hero-about.jpg') center/cover no-repeat;
 }
 
 .hero-contact{
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../Assets/images/hero-contact.jpg') center/cover no-repeat;
+    url('../Assets/Images/hero-contact.jpg') center/cover no-repeat;
 }
 
 .map iframe{
