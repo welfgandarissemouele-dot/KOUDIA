@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="Assets/Css/bootstrap.css">
     <link rel="stylesheet" href="Assets/Css/style.css">
     <link rel="stylesheet" href="Assets/bootstrap-icons/bootstrap-icons.css">
-    <link rel="shortcut icon" href="Assets/Images/KOUDIA.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Images/logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100">
+    <header class="fixed-top mt-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg rounded-pill mx-auto px-3 w-75">
             <div class="container">
-                <!-- Logo -->
-                <a class="navbar-brand fw-bold text-secondary" href="#">KOUDIA</a>
+                <!-- Logo Icone + Texte -->
+                <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+                    <img src="Assets/Images/logo.png" alt="KOUDIA Logo" width="35" height="35" class="me-2 rounded-circle shadow-sm">
+                    <span class="fs-5 text-secondary">
+                        KOUDIA
+                    </span>
+                </a>
+
                 <!-- Bouton mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
@@ -33,15 +39,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Réservation</a>
+                            <a class="nav-link" href="Pages/menu.html">Menu</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="Pages/contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+                            <a class="nav-link btn-reservation" href="../Pages/reservation.html">Réservation</a>
                         </li>
                     </ul>
                 </div>
@@ -51,19 +57,38 @@
     <!-- fin header -->
 
 
-    <!-- debut section hero -->
     <section class="hero d-flex align-items-center text-white">
         <div class="container text-center">
-            <h1 class="display-3 fw-bold">
-                Savourez l'authenticité de la bouffe congolaise
+            <h1 class="display-3 fw-bold mb-3">
+                Savourez l'authenticité de la <span class="text-warning">bouffe congolaise</span>
             </h1>
-            <p class="lead">
-                Chez KOUDIA, chaque plat raconte une belle histoire
+            <p class="lead mb-4">
+                Chez KOUDIA, chaque plat raconte une belle histoire.
             </p>
-            <a href="" class="btn btn-danger mt-3">Voir Le Menu</a>
+            
+            <!-- Boutons d'action -->
+            <div class="d-flex justify-content-center gap-3">
+                <a href="Pages/menu.html" class="btn btn-warning btn-lg px-4 fw-bold">Voir Le Menu</a>
+                <a href="Pages/reservation.html" class="btn btn-outline-light btn-lg px-4">
+                    <i class="bi bi-telephone me-2"></i>Réserver
+                </a>
+            </div>
+
+            <!-- Petit plus : Avis clients ou Localisation -->
+            <div class="mt-5 pt-4 border-top border-light border-opacity-25">
+                <p class="small mb-0">
+                    <i class="bi bi-star-fill text-warning"></i> 
+                    <i class="bi bi-star-fill text-warning"></i> 
+                    <i class="bi bi-star-fill text-warning"></i> 
+                    <i class="bi bi-star-fill text-warning"></i> 
+                    <i class="bi bi-star-half text-warning"></i>
+                    <span class="ms-2">4.8/5 (Plus de 100 gourmets satisfaits)</span>
+                </p>
+                <p class="small"><i class="bi bi-geo-alt-fill me-1"></i> Pointe-Noire, Congo</p>
+            </div>
         </div>
     </section>
-    <!-- fin section hero -->
+
 
     <!--debut A propos -->
     <section class="About py-5">
@@ -85,12 +110,12 @@
 
                     <div class="mt-4">
                         <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-briefcase text-danger fs-4 me-3"></i>
+                            <i class="bi bi-briefcase text-warning fs-4 me-3"></i>
                             <p class="mb-0"><strong>Usage professionnel :</strong> Privatisation pour vos déjeuners d'affaires et séminaires.</p>
                         </div>
 
                         <div class="d-flex align-items-center mb-4">
-                            <i class="bi bi-house-heart text-danger fs-4 me-3"></i>
+                            <i class="bi bi-house-heart text-warning fs-4 me-3"></i>
                             <p class="mb-0"><strong>Pour la maison :</strong> Savourez nos plats signatures chez vous grâce à notre service à emporter.</p>
                         </div>
                     </div>
@@ -114,7 +139,7 @@
                             <h5 class="card-title fw-bold">Poulet braisé</h5>
                             <p class="card-text text-muted">Savoureux et épicé à la perfection selon notre recette secrète.</p>
                             <a href="#" class="btn btn-secondary mt-auto">
-                                <i class="bi bi-cart-fill"></i>
+                                <i class="bi bi-cart text-warning"></i>
                                 Commander
                             </a>
                         </div>
@@ -128,7 +153,7 @@
                             <h5 class="card-title fw-bold">Poisson Braisé</h5>
                             <p class="card-text text-muted">Frais du jour, mariné aux herbes locales et grillé au feu de bois.</p>
                             <a href="#" class="btn btn-secondary mt-auto">
-                                <i class="bi bi-cart-fill"></i>
+                                <i class="bi bi-cart text-warning"></i>
                                 Commander
                             </a>
                         </div>
@@ -142,7 +167,7 @@
                             <h5 class="card-title fw-bold">Saka Saka</h5>
                             <p class="card-text text-muted">Un classique incontournable accompagné de ses garnitures fraîches.</p>
                             <a href="#" class="btn btn-secondary mt-auto">
-                                <i class="bi bi-cart-fill"></i>
+                                <i class="bi bi-cart text-warning"></i>
                                 Commander
                             </a>
                         </div>
@@ -156,7 +181,7 @@
                             <h5 class="card-title fw-bold">Riz poulet</h5>
                             <p class="card-text text-muted">Un classique pour les amoureux du riz.</p>
                             <a href="#" class="btn btn-secondary mt-auto">
-                                <i class="bi bi-cart-fill"></i>
+                                <i class="bi bi-cart text-warning"></i>
                                 Commander
                             </a>
                         </div>
@@ -173,19 +198,19 @@
             <h2 class="fw-bold mb-5">Pourquoi KOUDIA ?</h2>
             <div class="row">
                 <div class="col-mb-4">
-                    <i class="bi bi-emoji-smile display-3 text-danger"></i>
+                    <i class="bi bi-emoji-smile display-3 text-warning"></i>
                     <h5>Quantité garantie</h5>
                     <p>Des plats préparés avec soin et passion</p>
                 </div>
 
                 <div class="col-mb-4">
-                    <i class="bi bi-truck display-3 text-danger"></i>
+                    <i class="bi bi-truck display-3 text-warning"></i>
                     <h5>Livraison rapide</h5>
                     <p>Recevez vos plats chez vous rapidement</p>
                 </div>
 
                 <div class="col-mb-4">
-                    <i class="bi bi-star display-3 text-danger"></i>
+                    <i class="bi bi-star display-3 text-warning"></i>
                     <h5>service premium</h5>
                     <p>Experience client unique et exceptionnelle</p>
                 </div>
@@ -217,7 +242,7 @@
                         <h5 class="fw-bold">Christian NTADI.</h5>
                         <p class="text-muted small">"Le Liboke est incroyable! L'ambiance et la musique nous font voyager direct."</p>
                         <span class="badge bg-secondary mt-auto">
-                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star text-warning"></i>
                             Avis vérifié
                         </span>
                     </div>
@@ -237,7 +262,7 @@
                     <h5 class="fw-bold">Sarah MOUNTOU.</h5>
                     <p class="text-muted small">"Le meilleur Saka saka du quartier. Les portions sont généreuses et l'accueil est 'TOKOS' (plein d'amour)."</p>
                     <span class="badge bg-secondary mt-auto">
-                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star text-warning"></i>
                         Avis vérifié
                     </span>
                 </div>
@@ -257,7 +282,7 @@
                     <h5 class="fw-bold">Junior BOUESSO.</h5>
                     <p class="text-muted small">"Superbe expérience. Mention spéciale pour les bananes plantains frites à la perfection. Je reviendrai, Mou ké voutouka !"</p>
                     <span class="badge bg-secondary mt-auto">
-                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star text-warning"></i>
                         Avis vérifié
                     </span>
                 </div>
