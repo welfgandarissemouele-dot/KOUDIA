@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation-KOUDIA</title>
+    <link rel="stylesheet" href="../Assets/Css/bootstrap.css">
+    <link rel="stylesheet" href="../Assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Assets/Css/style.css">
+    <link rel="shortcut icon" href="../Assets/Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="fixed-top mt-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg rounded-pill mx-auto px-3 w-75">
+            <div class="container">
+                <!-- Logo Icone + Texte -->
+                <a class="navbar-brand d-flex align-items-center fw-bold text-dark" href="#">
+                    <img src="../Assets/Images/logo.png" alt="KOUDIA Logo" width="35" height="35" class="me-2 rounded-circle shadow-sm">
+                    <span class="fs-5 text-secondary">
+                        KOUDIA
+                    </span>
+                </a>
+
+                <!-- Bouton mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/a-propos.html">À propos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/menu.html">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+                            <a class="nav-link btn-reservation" href="../Pages/reservation.html">Réservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-reservation text-white d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3">Reservez une table</h1>
+            <p>Planifiez votre moment chez KOUDIA</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form action="#" method="POST" class="p-4 shadow rounded bg-white">
+                    <h3 class="text-center mb-4">Formulaire de réservation</h3>
+                    <div class="row">
+                        <!-- NOM -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nom complet</label>
+                            <input type="text" name="nom" class="form-control" required>
+                        </div>
+
+                        <!-- TELEPHONE -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Téléphone</label>
+                            <input type="tel" name="telephone" class="form-control" required>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control">
+                        </div>
+
+                        <!-- PERSONNES -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nombre de personnes</label>
+                            <input type="number" name="personnes" class="form-control" min="1" max="20" required>
+                        </div>
+
+                        <!-- DATE -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                <i class="bi bi-calendar"></i>
+                                Date
+                            </label>
+                            <input type="date" name="date" class="form-control" min="2026-01-01" required>
+                        </div>
+
+                        <!-- HEURE -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Heure</label>
+                            <input type="time" name="heure" class="form-control" required>
+                        </div>
+
+                        <!-- MESSAGE -->
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Demande spéciale</label>
+                            <textarea name="message" class="form-control" rows="3" placeholder="Anniversaire, table VIP..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- BOUTON -->
+                    <button type="submit" class="btn btn-secondary w-100">
+                        <i class="bi bi-calendar-check"></i> Confirmer la réservation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- debut footer -->
+    <footer class="main-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-logo">KOUDIA</h4>
+                    <p class="footer-text">
+                        L'excellence de la table africaine. Une fusion entre tradition culinaire et modernité au cœur de votre assiette.
+                    </p>
+                </div>
+
+                <!-- Liens de Navigation -->
+                <div class="col-6 col-lg-2 offset-lg-2">
+                    <h6 class="footer-title">Explorer</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Le Menu</a></li>
+                        <li><a href="pages/a-propos.html" class="footer-link">Notre Histoire</a></li>
+                        <li><a href="pages/contact.html" class="footer-link">Réservations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-6 col-lg-4 text-md-end">
+                    <h6 class="footer-title">Suivez l'expérience</h6>
+                    <div class="social-icons d-flex justify-content-md-end gap-3 mb-3">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <p class="footer-info small">Ouvert du Lundi au Samedi</p>
+                </div>
+            </div>
+
+            <!-- Copyright & Legal -->
+            <div class="footer-bottom mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between">
+                <p class="mb-0">&copy; 2026 KOUDIA. beauté & saveurs.</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fin footer -->
+    <script src="../Assets/Js/bootstrap.bundle.js"></script>
+</body>
+</html>
