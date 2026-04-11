@@ -123,13 +123,13 @@
 .hero-about{
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../images/hero-about.jpg') center/cover no-repeat;
+    url('../Images/hero-about.jpg') center/cover no-repeat;
 }
 
 .hero-contact{
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../images/hero-contact.jpg') center/cover no-repeat;
+    url('../Images/hero-contact.jpg') center/cover no-repeat;
 }
 
 .hero-menu{
